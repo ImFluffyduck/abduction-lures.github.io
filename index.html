@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abduction Lures</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header with Logo -->
+  <header>
+    <img src="images/abduction-lures.png" alt="Abduction Lures Logo" class="logo" id="logo" />
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Catch the Unbelievable</h1>
+    <p>Alien-grade fishing lures, handcrafted for out-of-this-world results.</p>
+  </section>
+
+  <!-- Product Section -->
+  <section class="products">
+    <h2>Our Lures</h2>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="images/abduction-lures.png" alt="Glow Worm">
+        <h3>Glow Worm</h3>
+        <p>$9.99</p>
+        <button onclick="addToCart('Glow Worm', 9.99)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/lure2.png" alt="Alien Claw">
+        <h3>Alien Claw</h3>
+        <p>$12.49</p>
+        <button onclick="addToCart('Alien Claw', 12.49)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/lure3.png" alt="Cosmic Spinner">
+        <h3>Cosmic Spinner</h3>
+        <p>$14.99</p>
+        <button onclick="addToCart('Cosmic Spinner', 14.99)">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Shopping Cart -->
+  <section class="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <p><strong>Total: $<span id="total">0.00</span></strong></p>
+    <button onclick="clearCart()">Clear Cart</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
